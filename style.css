@@ -33,14 +33,14 @@ h1 {
     left: 61%;
 }
 #mcmc_plots_div{
-      position: fixed;
-      bottom: 0%;
+      position: relative;
+      top: 180px; 
       left: 25%;
   }
 @media only screen and (max-width: 500px) {
   #mcmc_plots_div{
       position: fixed;
-      bottom: 0%;
+      top: 100px;
       left: 25%;
   }
 }
