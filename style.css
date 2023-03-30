@@ -33,9 +33,16 @@ h1 {
     left: 61%;
 }
 #mcmc_plots_div{
-      position: relative;
+    position: fixed;
+    left: 49.2%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    /* width: 150px; // Any width will be fine
+    height: 150px: // Any height will be fine */
+      /* position: relative;
       top: 180px; 
       left: 25%;
+      transform: translate(-50%, -50%); */
   }
 @media only screen and (max-width: 500px) {
   #mcmc_plots_div{
