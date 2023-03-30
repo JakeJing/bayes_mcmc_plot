@@ -53,7 +53,7 @@ var log_post = function (state, data) {
 
 // Initializing the sampler and generate a sample of size 1000
 var sampler = new mcmc.AmwgSampler(params, log_post, data);
-sampler.burn(500);
+sampler.burn(1000);
 var samples = sampler.sample(1);
 
 // Below is just the code to run the sampler and

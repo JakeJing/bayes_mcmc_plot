@@ -1,13 +1,13 @@
 h1 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 38px;
   position: absolute;
   top: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-form {
+#given-params {
   position: fixed;
   top: 13%;
   left: 50%;
@@ -30,7 +30,7 @@ form {
 #clearMCMC{
     position: fixed;
     top: 18%;
-    left: 60%;
+    left: 61%;
 }
 #mcmc_plots_div{
     position: fixed;
