@@ -7,17 +7,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-input { 
-  margin-bottom: 0px; 
-  margin-right: 10px; 
-}
-.input-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%; /* add some top margin */
-}
 #given-params {
   position: fixed;
   top: 13%;
@@ -25,33 +14,23 @@ input {
   transform: translate(-50%, -50%);
 }
 .input-cell {
-    width: 120px;
-    height: 25px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    width: 100px;
+    height: 30px;
 }
-
 #startMCMC{
   position: fixed;
   top: 18%;
   left: 35%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
 }
 #stopMCMC{
     position: fixed;
     top: 18%;
     left: 48%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
 }
 #clearMCMC{
     position: fixed;
     top: 18%;
     left: 61%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
 }
 #mcmc_plots_div{
     position: fixed;

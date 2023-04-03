@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Normal Distribution Simulator</title>
+    <link rel="stylesheet" type="text/css" href="gpt-style.css" />
+    <!-- Load Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <label for="mu">Mean:</label>
+    <input type="number" id="mu" name="mu" value="0" /><br />
+
+    <label for="sd">Standard Deviation:</label>
+    <input type="number" id="sd" name="sd" value="1" /><br />
+
+    <label for="n">Sample Size:</label>
+    <input type="number" id="n" name="n" value="100" /><br />
+
+    <button id="simulate">Simulate</button>
+    <button id="plot">Plot</button>
+    <div id="message"></div>
+    <div id="histogram"></div>
+
+    <script src="gpt-script.js"></script>
+  </body>
+</html>
