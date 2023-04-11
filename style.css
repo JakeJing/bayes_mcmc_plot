@@ -1,65 +1,68 @@
-h1 {
+h2 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 35px;
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-input { 
-  margin-bottom: 0px; 
-  margin-right: 10px; 
 }
 .input-container {
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  /* margin-top: 5%; /1* add some top margin *1/ */
+}
+input[type="number"] {
+	width: 90px;
+  height: 30px;
+	/* padding: 10px; */
+	margin-right: 20px;
+	margin-bottom: 0px;
+  text-align: center;
+	/* border-radius: 5px; */
+	/* border: none; */
+	/* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.button-container {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 5%; /* add some top margin */
+  /* margin-top: 5%; /1* add some top margin *1/ */
 }
-#given-params {
-  position: fixed;
-  top: 13%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.input-cell {
-    width: 120px;
-    height: 25px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+button {
+	/* background-color: gray; */
+	/* color: white; */
+	width: 130px;
+  height: 30px;
+	padding: 20px auto;
+  margin-right: 10px;
+	/* border: none; */
+	/* border-radius: 5px; */
+	/* cursor: pointer; */
 }
 
-#startMCMC{
-  position: fixed;
-  top: 18%;
-  left: 35%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
+button:hover {
+	opacity: 0.8;
 }
-#stopMCMC{
-    position: fixed;
-    top: 18%;
-    left: 48%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
-#clearMCMC{
-    position: fixed;
-    top: 18%;
-    left: 61%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
+
+
+/* for computer */
+@media (min-width: 768px) { 
 #mcmc_plots_div{
     position: fixed;
     left: 49.2%;
     top: 65%;
     transform: translate(-50%, -50%);
   }
-@media only screen and (max-width: 400px) {
+}
+
+/* @media only screen and (max-width: 400px) {
   #mcmc_plots_div{
     position: fixed;
     left: 50%;
@@ -68,6 +71,6 @@ input {
     width: 250px;
     height: 250px: 
   }
-}
+} */
 
 
