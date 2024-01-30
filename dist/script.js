@@ -33,6 +33,8 @@ simulateButton.addEventListener("click", function () {
       Input_params["μ"] = mu;
       Input_params["σ"] = sd;
       window.alert("Simulation OK! Now you can start sampling!");
+      // disable simulate, if data has been generated
+      this.disabled = true;
 
       // messageDiv.innerHTML = "OK!";
       // setTimeout(function () {
@@ -189,11 +191,15 @@ var stop_sample_loop = function () {
 startsampling.addEventListener("click", function () {
   // if sampling has begun once (bcs stopMCMC.disabled is true), continue the sampling
   if (document.getElementById("stopMCMC").disabled) {
+    // need to disable startMCMC so that Start and Stop button can switch on and off
+    document.getElementById("startMCMC").disabled = true;
     sample_loop(params, log_post, data);
     document.getElementById("stopMCMC").disabled = false;
   } else {
     if (data.length > 0) {
       this.disabled = true;
+      // switch Start label to Continue
+      startsampling.textContent = "Continue";
       document.getElementById("stopMCMC").disabled = false;
       // update the sampler with new data after the click
       sampler = new mcmc.AmwgSampler(params, log_post, data);
@@ -220,9 +226,13 @@ stopsampling.addEventListener("click", function () {
 // Add event listener for the "clearsampling" button
 clearsampling.addEventListener("click", function () {
   if (data.length > 0) {
+    // change the startsampling label back
+    startsampling.textContent = "Start";
+    document.getElementById("simulate").disabled = false;
     document.getElementById("startMCMC").disabled = false;
     document.getElementById("stopMCMC").disabled = false;
     clear_samples();
+    data = [];
   } else {
     window.alert("Please simulate data first!");
   }
