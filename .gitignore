@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+/other
+/public/backup
 
 # local env files
 .env.local
