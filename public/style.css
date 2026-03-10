@@ -47,7 +47,7 @@ button:hover {
   #mcmc_plots_div {
     position: fixed;
     left: 49.2%;
-    top: 50%;
+    top: 58%;
     transform: translate(-50%, -50%);
   }
 }
